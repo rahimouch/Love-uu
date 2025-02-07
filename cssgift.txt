@@ -1,0 +1,41 @@
+/* Set the page background to pink */
+body {
+    background-color: pink; /* Pink color for the background */
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Content inside the page */
+.content {
+    text-align: center;
+    z-index: 1;
+}
+
+/* Create a heart shape as the background */
+body::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: red; /* Heart color */
+    clip-path: polygon(50% 0%, 0% 35%, 50% 100%, 100% 35%);
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.5em;
+}
+
+p {
+    font-size: 1.5em;
+}

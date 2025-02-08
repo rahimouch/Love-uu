@@ -1,0 +1,17 @@
+# Clone the repository
+git clone https://github.com/yourusername/my-website.git
+
+# Navigate to the repository folder
+cd my-website
+
+# Copy your project files here
+cp -r /path/to/your/project/* .
+
+# Stage the changes
+git add .
+
+# Commit the changes
+git commit -m "Add website files"
+
+# Push to GitHub
+git push origin main
